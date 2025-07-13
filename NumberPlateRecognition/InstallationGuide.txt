@@ -1,0 +1,13 @@
+Step 1: Install Python
+
+Step 2: Install Required Libraries
+pip install Flask
+pip install opencv-python
+pip install Pillow
+pip install numpy
+pip install pytesseract
+
+Step 3: Install Tesseract OCR
+
+Step 4: Run the Application
+python Program.py

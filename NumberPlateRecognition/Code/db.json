@@ -1,0 +1,122 @@
+{
+    "KL26H5009": {
+        "Name": "Amit Sharma",
+        "Address": "Jayanagar, Bangalore, Karnataka",
+        "Phone": "9876543210",
+        "Fine Details": "Signal Jump",
+        "Location": "MG Road",
+        "Near": "Metro Station",
+        "Date": "12/09/2024",
+        "Time": "09:30AM",
+        "Fine Amount": "500",
+        "Paid or Unpaid": "Unpaid"
+    },
+    "HR26DK8337": {
+        "Name": "Priya Verma",
+        "Address": "Connaught Place, New Delhi",
+        "Phone": "8765432109",
+        "Fine Details": "Wrong Parking",
+        "Location": "Karol Bagh Market",
+        "Near": "McDonald's",
+        "Date": "25/08/2024",
+        "Time": "02:00PM",
+        "Fine Amount": "1000",
+        "Paid or Unpaid": "Paid"
+    },
+    "MH20EE7598": {
+        "Name": "Rohit Kulkarni",
+        "Address": "Shivaji Nagar, Pune, Maharashtra",
+        "Phone": "9988776655",
+        "Fine Details": "Over Speeding",
+        "Location": "Pune-Mumbai Expressway",
+        "Near": "Food Court",
+        "Date": "01/11/2024",
+        "Time": "04:15PM",
+        "Fine Amount": "2000",
+        "Paid or Unpaid": "Unpaid"
+    },
+    "TN87A3980": {
+        "Name": "Suresh Kumar",
+        "Address": "T Nagar, Chennai, Tamil Nadu",
+        "Phone": "9988112233",
+        "Fine Details": "No Seatbelt",
+        "Location": "Mount Road",
+        "Near": "Spencer Plaza",
+        "Date": "05/09/2024",
+        "Time": "11:45AM",
+        "Fine Amount": "300",
+        "Paid or Unpaid": "Paid"
+    },
+    "RJ14XZ9907": {
+        "Name": "Neha Gupta",
+        "Address": "Malviya Nagar, Jaipur, Rajasthan",
+        "Phone": "9191919191",
+        "Fine Details": "Red Light Violation",
+        "Location": "Tonk Road",
+        "Near": "Gaurav Tower",
+        "Date": "30/09/2024",
+        "Time": "06:30PM",
+        "Fine Amount": "1500",
+        "Paid or Unpaid": "Unpaid"
+    },
+    "GJ01BC7621": {
+        "Name": "Rahul Desai",
+        "Address": "Satellite, Ahmedabad, Gujarat",
+        "Phone": "9292929292",
+        "Fine Details": "Drunk Driving",
+        "Location": "SG Highway",
+        "Near": "Zydus Hospital",
+        "Date": "10/10/2024",
+        "Time": "10:45PM",
+        "Fine Amount": "5000",
+        "Paid or Unpaid": "Unpaid"
+    },
+    "UP32LK4312": {
+        "Name": "Arun Pratap",
+        "Address": "Hazratganj, Lucknow, Uttar Pradesh",
+        "Phone": "9111111111",
+        "Fine Details": "Overloading",
+        "Location": "Ring Road",
+        "Near": "Phoenix Mall",
+        "Date": "18/10/2024",
+        "Time": "03:20PM",
+        "Fine Amount": "3500",
+        "Paid or Unpaid": "Paid"
+    },
+    "WB20FR9090": {
+        "Name": "Anjali Sen",
+        "Address": "Salt Lake, Kolkata, West Bengal",
+        "Phone": "9323232323",
+        "Fine Details": "No Seatbelt",
+        "Location": "EM Bypass",
+        "Near": "Ruby Hospital",
+        "Date": "08/07/2024",
+        "Time": "05:00PM",
+        "Fine Amount": "400",
+        "Paid or Unpaid": "Unpaid"
+    },
+    "MH20EJ0365": {
+        "Name": "Rajeev Mishra",
+        "Address": "Civil Lines, Raipur, Chhattisgarh",
+        "Phone": "9343434343",
+        "Fine Details": "Signal Violation",
+        "Location": "G.E. Road",
+        "Near": "City Center Mall",
+        "Date": "19/06/2024",
+        "Time": "01:30PM",
+        "Fine Amount": "600",
+        "Paid or Unpaid": "Paid"
+    },
+    "MP09LM6587": {
+        "Name": "Vikram Singh",
+        "Address": "New Palasia, Indore, Madhya Pradesh",
+        "Phone": "9454545454",
+        "Fine Details": "No Insurance",
+        "Location": "AB Road",
+        "Near": "C21 Mall",
+        "Date": "02/08/2024",
+        "Time": "08:45AM",
+        "Fine Amount": "1200",
+        "Paid or Unpaid": "Unpaid"
+    }
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Plate Detection</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #e6e9ef;
+        color: #333;
+      }
+
+      h1 {
+        font-size: 2em;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      .container {
+        text-align: center;
+        width: 90%;
+        max-width: 800px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        padding: 30px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease;
+      }
+
+      button {
+        background-color: #2980b9;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #3498db;
+      }
+
+      input[type="file"] {
+        margin-bottom: 15px;
+        padding: 5px;
+        font-size: 1em;
+      }
+
+      .car-info {
+        padding: 20px;
+        margin: 20px 0;
+        background-color: #fafafa;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .car-info img {
+        max-width: 400px;
+        max-height: 300px;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .car-info table {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ddd;
+        width: 75%;
+        margin: 0 12.5%;
+        border-collapse: collapse;
+        margin-top: 10px;
+      }
+
+      .car-info table td {
+        padding: 12px;
+        text-align: left;
+      }
+
+      .car-info table td:first-child {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+
+      .car-info table td:nth-child(2) {
+        width: 15px;
+        text-align: center;
+      }
+
+      .car-info table td:last-child {
+        font-weight: normal;
+        color: #555;
+      }
+
+      h2 {
+        color: #34495e;
+        margin-bottom: 15px;
+      }
+
+      p {
+        color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Number Plate Detection</h1>
+      <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/jpeg" required />
+        <button type="submit">Upload Image</button>
+      </form>
+      {% if detected %}
+      <h2>Detected Cars:</h2>
+      <div>
+        {% for car in car_images %}
+        <div class="car-info">
+          <img src="/image/{{ car.img_file }}" alt="Car Image" />
+          <table>
+            <tr>
+              <td>Number Plate</td>
+              <td>:</td>
+              <td>{{ car.plate }}</td>
+            </tr>
+            <tr>
+              <td>Owner Name</td>
+              <td>:</td>
+              <td>{{ car.name }}</td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td>:</td>
+              <td>{{ car.address }}</td>
+            </tr>
+            <tr>
+              <td>Mobile No</td>
+              <td>:</td>
+              <td>{{ car.phone }}</td>
+            </tr>
+            <tr>
+              <td>Fine Details</td>
+              <td>:</td>
+              <td>{{ car.fine_details }}</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>:</td>
+              <td>{{ car.location }}</td>
+            </tr>
+            <tr>
+              <td>Near</td>
+              <td>:</td>
+              <td>{{ car.near }}</td>
+            </tr>
+            <tr>
+              <td>Date</td>
+              <td>:</td>
+              <td>{{ car.date }}</td>
+            </tr>
+            <tr>
+              <td>Time</td>
+              <td>:</td>
+              <td>{{ car.time }}</td>
+            </tr>
+            <tr>
+              <td>Fine Amount</td>
+              <td>:</td>
+              <td>₹{{ car.fine_amount }}</td>
+            </tr>
+            <tr>
+              <td>Paid or Unpaid</td>
+              <td>:</td>
+              <td>{{ car.paid_or_unpaid }}</td>
+            </tr>
+          </table>
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <p>No valid number plates were detected.</p>
+      {% endif %}
+    </div>
+  </body>
+</html>
